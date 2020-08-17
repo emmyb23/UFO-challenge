@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Bootstrap Visualization Dashboard</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+  <!-- <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script> -->
+  <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script> -->
+  <!-- <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script> -->
+
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="reset.css">
+</head>
+<body>
+<!-- navigation bar -->
+<nav class="nav nav-pills">
+    <div class="navbar-header">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+        </button>
+    </div>
+    <div class="navbar-collapse collapse">
+      <ul class="nav navbar-nav">
+        <li><a href="#">Latitude</a></li>
+      </ul>
+    <ul class="nav navbar-nav navbar-rght">
+      <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Plots</a>
+
+      <div class="dropdown-menu">
+        <a class="dropdown-item" href="#">Max Temp</a>
+        <a class="dropdown-item" href="#">Humidity</a>
+        <a class="dropdown-item" href="#">Cloudiness</a>
+        <a class="dropdown-item" href="#">Wind Speed</a>
+      </div>
+    </ul>
+    <li class="nav-item">
+      <a class="nav-link" href="#">Complarison</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="#">Data</a>
+    </li>
+  </ul>
+  
+  
+  <!-- card for picture and intro -->
+<div class="card mb-3" style="max-width: 800px;">
+  <div class="row no-gutters">
+      <div class="col-md-6">
+          <img src="C:\Users\EJBOLI\OneDrive - Monsanto\Migrated from My PC\Desktop\Webpage homework\Fig1.png" class="card-img" alt="Temp Vs. Latitude">
+      </div>
+          <div class="card-body">
+            <h1 class="card-title">Summary: Latitude vs. Temp</h1>
+            <p class="card-text">The purpose of this project was to analyze how weather changes as you get closer to the equator. To acomplish this analysis, we first pulled data from OpenWeatherMap API to assemble a dataset on over 500 cities.</p>
+            <br>
+            <p> After assembling the dataset, we used Matplotlib to plot various aspects of the weather vs. latitude. Factors we looked at included: temp, cloudiness, wind speed, and humidity. This site provides the source data and visualizations created as part of the analysis, as well as expectations and descriptions of any trenda and correlations witnessed.</p>
+          </div>
+        </div>
+     </div>
+  <div class="card mb-3" style="max-width: 300px;">
+    <div class="row no-gutters">
+        <div class="col-md-6">
+            <img src="C:\Users\EJBOLI\OneDrive - Monsanto\Migrated from My PC\Desktop\Webpage homework\Fig2.png" class="card-img" alt="Temp Vs. Latitude">
+        </div>  
+  </div>
+</div>
+
+<!-- list groups -->
+  <div class="row">
+    <div class="col">
+        <h2 class="text-center">List Groups</h2>
+        <ul class="list-group">
+          <li class="list-group-item d-flex justify-content-between align-items-center">
+              Cras justo odio <span class="badge badge-pill badge-secondary">10</span>
+          </li>
+          <li class="list-group-item d-flex justify-content-between align-items-center">
+              Cras justo odio <span class="badge badge-pill badge-secondary">3</span>
+          </li>
+          <li class="list-group-item d-flex justify-content-between align-items-center">
+              Cras justo odio <span class="badge badge-pill badge-secondary">4</span>
+          </li>
+        </ul>
+    </div>
+  </div>
+
+<!-- cards -->
+    <div class="row">
+      <div class="col">
+        <h3 class="text-center">Cards</h3>
+        <div class="card" style="width: 18rem;">
+            <div class="card-body">
+              <h5 class="card-title">Card title</h5>
+              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+              <a href="#" class="btn btn-primary">Go somewhere</a>
+            </div>
+          </div>
+        </div>
+    </div>
+
+<!-- navigation tabs -->
+  <div class="row">
+    <div class="col">
+      <h3 class="text-center">Nav Tabs</h3>
+      <ul class="nav nav-tabs">
+          <li class="nav-item">
+            <a class="nav-link active" href="#">Active</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Link</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Link</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link disabled" href="#">Disabled</a>
+          </li>
+        </ul>
+      </div>
+  </div>
+
+  <!-- navigation pills -->
+    <div class="row">
+      <div class="col">
+        <h3 class="text-center">Nav Pills</h3>
+        <ul class="nav nav-pills">
+            <li class="nav-item">
+              <a class="nav-link active" href="#">Active</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Link</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Link</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link disabled" href="#">Disabled</a>
+            </li>
+          </ul>
+        </div>
+    </div>
+
+
+</body>
+
+</html>
